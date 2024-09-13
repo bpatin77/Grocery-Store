@@ -14,7 +14,11 @@
  * @param {Item[]} items - array of items
  */
 function logNames(items) {
-  // TODO: use `forEach`
+  // TODO: use `forEach
+  items.forEach((item) => console.log)
+  for (const item of items){
+    console.log(item);
+  }
 }
 
 /**
@@ -23,6 +27,13 @@ function logNames(items) {
  */
 function getUppercaseNames(items) {
   // TODO: use `map`
+  const upperCase = []
+  for (let i = 0; i < items.length; i++) {
+    items.map((element) => {
+      upperCase.push(element.name.toUpperCase());
+    });
+    return upperCase;
+  }
 }
 
 /**
@@ -32,8 +43,12 @@ function getUppercaseNames(items) {
  */
 function getItemById(items, id) {
   // TODO: use `find`
+  const found= {};
+  for (let i = 0; i < items.length; i++) {
+    const found = items.find((id) => id =="");
 }
-
+console.log(found);
+}
 /**
  * @param {Item[]} items - array of items
  * @param {string} name - name of the item to find
